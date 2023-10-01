@@ -1,0 +1,34 @@
+@import "../variables.scss";
+.hero_button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border: solid 0.2rem $back-c-button-primary;
+  border-radius: 1rem;
+  width: 100%;
+  background: $back-c-button-primary;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: $ls-button;
+
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 1.1rem;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &:hover {
+    background: $back-c-button-hover;
+    border: solid 0.2rem $back-c-button-hover;
+  }
+}

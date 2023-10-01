@@ -1,0 +1,85 @@
+@import "../variables.scss";
+.hero {
+  border: 0.1rem solid #cfcfcf;
+  border-radius: 1rem;
+
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+.sel_button {
+  padding: 0.05rem 0.5rem;
+  font-size: 1rem;
+  border: 0.1rem solid #cfcfcf;
+  border-radius: 1rem;
+  width: 100%;
+  background: white;
+  color: #010101;
+
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 1.1rem;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &:hover {
+    background: $back-c-button-hover;
+    border: solid 0.2rem $back-c-button-hover;
+    color: azure;
+  }
+}
+
+.selA_button {
+  padding: 0.05rem 0.5rem;
+  font-size: 1rem;
+  border: 0.1rem solid #cfcfcf;
+  border-radius: 1rem;
+  width: 100%;
+  background: black;
+  color: #ffffff;
+
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 1.1rem;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &:hover {
+    background: $back-c-button-hover;
+    border: solid 0.2rem $back-c-button-hover;
+    color: azure;
+  }
+}
